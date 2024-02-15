@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- //easiest way of using tailwind -->
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+<body>
+    <!-- //wrapper -->
+    <div class=" w-[100vw] h-[100vh] flex flex-col items-center  justify-center bg-[#344151] gap-10">
+        <div class=" text-[#0398d4] font-medium text-[20px]"> Increment And Decrement</div>
+
+        <div class="bg-white flex text-[25px]  text-[#344151] rounded-sm gap-12 p-3 px-5 ">
+            <!-- for - negative  button
+            pr right side padding -->
+            <!--  button ke write side me border hai==>border-r-2 -- left side ke liye ==>border-l-2> -->
+
+             <!-- for - negative  button -->
+             <!-- jaise hi negative wale button pe click kiya to decrement function call ho gaya -->
+            <button onclick ="decrement()" class=" border-[#bfbfbf] pr-5">
+              <!-- esme font ossum ke help se ek minus ka icon placed kar --> 
+                 <!-- diya --> 
+
+                 <i class="fa-solid fa-minus"></i>
+            </button>
+              
+
+            <!-- for integer valur -->
+
+
+           <div id="counter" class="font-bold">  <!-- //ye counter wala div hai  jisko ham id denge counter name ki    
+        and id esliye di taki ham esse JS ke ander fetch kar sake-->
+               <!-- esme counter ko initially zero kar denge 
+            kyuki initally value to 0 hai -->
+               0
+            </div>
+
+            <!-- for +  button -->
+                <!-- positive wale button pe jaise click karege waise hi increment function call ho jayega  and ye function js me padde honge-->
+            <button onclick="increment()" class="border-l-2 border-[#bfbfbf] pl-5">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crosssorigin="anonymouss"></script>
+    
+</body>
+</html>
